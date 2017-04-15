@@ -1,11 +1,9 @@
 aws-ip-address-checker
 =======
-[![Build Status](https://travis-ci.org/dutu/cryptox.svg)](https://travis-ci.org/dutu/cryptox/) ![Dependencies Status](https://david-dm.org/dutu/cryptox.svg)
+[![Build Status](https://travis-ci.org/dutu/aws-ip-address-checker.svg)](https://travis-ci.org/dutu/aws-ip-address-checker) ![Dependencies Status](https://david-dm.org/dutu/aws-ip-address-checker.svg)
 
 
-**aws-ip-address-checker** is a node.js wrapper for REST API for multiple crypto currency exchanges.
-
-**aws-ip-address-checker** manages API communication with different exchanges and  provides common methods for all exchanges. Differences between the different API's are abstracted away.
+**aws-ip-address-checker** is a node.js module for getting AWS IP address details.
 
 
 ### Contents
