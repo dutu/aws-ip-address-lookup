@@ -15,17 +15,17 @@ See [AWS IP Address Ranges](http://docs.aws.amazon.com/general/latest/gr/aws-ip-
 
 
 
-# Install #
+# Install
 
     npm install aws-ip-address-lookup
 
-# Use #
+# Use
 
 ### Example 1
 
 ```js
 const Aws-ip-address-lookup = require("aws-ip-address-lookup");
-var aws-ip-address-lookup = new Aws-ip-address-lookup();
+let aws-ip-address-lookup = new Aws-ip-address-lookup();
 	
 aws-ip-address-lookup.lookup('54.255.183.252', function (err, details) {
   if (!err) {
@@ -44,13 +44,14 @@ Result:
 }
 ```
 
-
-
 # ChangeLog
 
 **aws-ip-address-lookup** module adheres to [Semantic Versioning](http://semver.org/) for versioning.
 
+### [1.0.0] - 2017-04-15
 
-# License #
+- First release
+
+# License
 
 [MIT](LICENSE)
