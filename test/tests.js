@@ -56,6 +56,8 @@ describe('Function Test', function () {
         done();
       });
     });
+  });
+  describe("lookup address", function () {
     it('should return no details for non-AWS IPv4 address', function (done) {
       let ipAddress = '127.0.0.1';
       awsIPAddressLookup.lookup(ipAddress, (error, detail) => {
@@ -102,6 +104,5 @@ describe('Function Test', function () {
       });
     });
   });
-
 });
 
