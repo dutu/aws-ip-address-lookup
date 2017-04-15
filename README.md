@@ -44,6 +44,43 @@ Result:
 }
 ```
 
+### Example 2
+
+```js
+const Aws-ip-address-lookup = require("aws-ip-address-lookup");
+let aws-ip-address-lookup = new Aws-ip-address-lookup();
+	
+aws-ip-address-lookup.lookup(['54.255.183.252', '127.0.0.1', '2620:0107:300f:0000:0000:0000:0000:0000'], (err, details) => {
+  if (!err) {
+    console.log(JSON.strigify(details));
+  }
+});
+```
+
+Result:
+```js
+[
+  {
+    ipAddress: "54.255.183.252",
+    ipPrefix: "54.255.0.0/16",
+    region: "ap-southeast-1",
+    service: "AMAZON"
+  },
+  {
+    ipAddress: "127.0.0.1",
+    ipPrefix: "",
+    region: "",
+    service: ""
+  },
+  {
+    ipAddress: "2620:0107:300f:0000:0000:0000:0000:0000",
+    ipPrefix: "2620:107:300f::/64",
+    region: "us-west-1",
+    service: "AMAZON"
+  }
+]
+```
+
 # ChangeLog
 
 **aws-ip-address-lookup** module adheres to [Semantic Versioning](http://semver.org/) for versioning.

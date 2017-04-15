@@ -22,7 +22,7 @@ describe('Unit Test', function () {
       });
     });
     it('should accept IP address parameter as an array of strings', function (done) {
-      let ipAddresses = ['192.168.0.1', '127.0.0.1'];
+      let ipAddresses = ['54.255.183.252', '127.0.0.1', '2620:0107:300f:0000:0000:0000:0000:0000'];
       awsIPAddressLookup.lookup(ipAddresses, (error, details) => {
         expect(error).not.to.be.an.instanceOf(Error);
         expect(Array.isArray(details)).to.be.true;
