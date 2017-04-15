@@ -1,5 +1,4 @@
 const AwsIPAddressChecker = require('../lib/index.js');
-const _ = require('lodash');
 const Address6 = require('ip-address').Address6;
 
 const chai = require('chai');
