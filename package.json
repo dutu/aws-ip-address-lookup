@@ -1,0 +1,33 @@
+{
+  "name": "aws-ip-address-checker",
+  "version": "0.0.1",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "private": false,
+  "author": "Adrian Clinciu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dutu/aws-ip-address-checker.git"
+  },
+  "keywords": [
+    "aws",
+    "IP",
+    "IP address details",
+    "amazon web services"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dutu/aws-ip-address-checker/issues"
+  },
+  "homepage": "https://github.com/dutu/aws-ip-address-checker",
+  "dependencies": {
+    "ip-address": "^5.8.8",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
