@@ -1,9 +1,10 @@
-aws-ip-address-checker
+aws-ip-address-lookup
 =======
-[![Build Status](https://travis-ci.org/dutu/aws-ip-address-checker.svg)](https://travis-ci.org/dutu/aws-ip-address-checker) ![Dependencies Status](https://david-dm.org/dutu/aws-ip-address-checker.svg)
+[![Build Status](https://travis-ci.org/dutu/aws-ip-address-lookup.svg)](https://travis-ci.org/dutu/aws-ip-address-lookup) ![Dependencies Status](https://david-dm.org/dutu/aws-ip-address-lookup.svg)
 
 
-**aws-ip-address-checker** is a node.js module for getting AWS IP address details.
+**aws-ip-address-lookup** is a node.js module for looking up Amazon Web Services (AWS) IP address details.
+See [AWS IP Address Ranges](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html "AWS IP Address Ranges").
 
 
 ### Contents
@@ -16,28 +17,28 @@ aws-ip-address-checker
 
 # Install #
 
-    npm install aws-ip-address-checker
-
-
+    npm install aws-ip-address-lookup
 
 # Use #
 
+### Example 1
+
 ```js
-const Aws-ip-address-checker = require("aws-ip-address-checker");
-var aws-ip-address-checker = new Aws-ip-address-checker();
+const Aws-ip-address-lookup = require("aws-ip-address-lookup");
+var aws-ip-address-lookup = new Aws-ip-address-lookup();
 	
-aws-ip-address-checker.check('54.255.183.252', function (err, details) {
+aws-ip-address-lookup.lookup('54.255.183.252', function (err, details) {
   if (!err) {
-    console.log(details);
+    console.log(JSON.strigify(details));
   }
 });
 ```
 
-Example result:
+Result:
 ```js
 {
   "ipAddress": "54.255.183.252",
-  "ip_prefix": "54.255.0.0/16",
+  "ipPrefix": "54.255.0.0/16",
   "region": "ap-southeast-1",
   "service": "AMAZON"
 }
@@ -47,10 +48,7 @@ Example result:
 
 # ChangeLog
 
-> cryptox module adheres to [Semantic Versioning] (http://semver.org/) for versioning: MAJOR.MINOR.PATCH.  
-> 1. MAJOR version increments when non-backwards compatible API changes are introduced  
-> 2. MINOR version increments when functionality in a backwards-compatible manner are introduced  
-> 3. PATCH version increments when backwards-compatible bug fixes are made  
+**aws-ip-address-lookup** module adheres to [Semantic Versioning](http://semver.org/) for versioning.
 
 
 # License #
