@@ -4,6 +4,7 @@ aws-ip-address-lookup
 
 
 **aws-ip-address-lookup** is a node.js module for looking up Amazon Web Services (AWS) IP address details.
+
 See [AWS IP Address Ranges](http://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html "AWS IP Address Ranges").
 
 
@@ -24,12 +25,12 @@ See [AWS IP Address Ranges](http://docs.aws.amazon.com/general/latest/gr/aws-ip-
 ### Example 1
 
 ```js
-const Aws-ip-address-lookup = require("aws-ip-address-lookup");
-let aws-ip-address-lookup = new Aws-ip-address-lookup();
+const AwsIPAddressLookup = require("aws-ip-address-lookup");
+let awsIPAddressLookup = new AwsIPAddressLookup();
 	
-aws-ip-address-lookup.lookup('54.255.183.252', function (err, details) {
+awsIPAddressLookup.lookup('54.255.183.252', function (err, details) {
   if (!err) {
-    console.log(JSON.strigify(details));
+    console.log(JSON.stringify(details));
   }
 });
 ```
@@ -47,12 +48,12 @@ Result:
 ### Example 2
 
 ```js
-const Aws-ip-address-lookup = require("aws-ip-address-lookup");
-let aws-ip-address-lookup = new Aws-ip-address-lookup();
+const AwsIPAddressLookup = require("aws-ip-address-lookup");
+let awsIPAddressLookup = new AwsIPAddressLookup();
 	
-aws-ip-address-lookup.lookup(['54.255.183.252', '127.0.0.1', '2620:0107:300f:0000:0000:0000:0000:0000'], (err, details) => {
+awsIPAddressLookup.lookup(['54.255.183.252', '127.0.0.1', '2620:0107:300f:0000:0000:0000:0000:0000'], (err, details) => {
   if (!err) {
-    console.log(JSON.strigify(details));
+    console.log(JSON.stringify(details));
   }
 });
 ```
@@ -83,9 +84,14 @@ Result:
 
 # ChangeLog
 
-**aws-ip-address-lookup** module adheres to [Semantic Versioning](http://semver.org/) for versioning.
+**aws-ip-address-lookup** module adheres to [Semantic Versioning](http://semver.org/).
 
-### [1.0.0] - 2017-04-15
+## [1.0.1] - 2017-04-15
+
+### Changed:
+- Update examples
+
+## [1.0.0] - 2017-04-15
 
 - First release
 

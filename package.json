@@ -1,7 +1,7 @@
 {
   "name": "aws-ip-address-lookup",
-  "version": "1.0.0",
-  "description": "AWS IP address lookup",
+  "version": "1.0.1",
+  "description": "Amazon Web Services (AWS) IP address lookup",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha"
